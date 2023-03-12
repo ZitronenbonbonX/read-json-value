@@ -1,4 +1,4 @@
-[![Node.js Package](https://github.com/ZitronenbonbonX/read-json-value/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/ZitronenbonbonX/read-json-value/actions/workflows/npm-publish.yml)
+[![NPM](https://nodei.co/npm/read-json-value.png)](https://nodei.co/npm/read-json-value/)
 
 # READ JSON VALUE
 
