@@ -1,14 +1,14 @@
 const fs = require('fs');
-const readByPath = require('../index');
+const readJsonValue = require('../index');
 
-describe('readByPath', () => {
+describe('readJsonValue', () => {
   it('should return value at given path', () => {
     const json = { foo: { bar: { baz: 'qux' } } };
     const filepath = '/path/to/json/file';
     const jsonpath = 'foo.bar.baz';
     jest.spyOn(fs, 'existsSync').mockReturnValue(true);
     jest.spyOn(fs, 'readFileSync').mockReturnValue(JSON.stringify(json));
-    const result = readByPath(filepath, jsonpath);
+    const result = readJsonValue(filepath, jsonpath);
     expect(result).toBe('qux');
   });
 
@@ -20,7 +20,7 @@ describe('readByPath', () => {
       expect(code).toBe(1);
       return null;
     });
-    readByPath(filepath, jsonpath);
+    readJsonValue(filepath, jsonpath);
   });
 
   it('should exit with error code if JSON is invalid', () => {
@@ -33,6 +33,6 @@ describe('readByPath', () => {
       expect(code).toBe(1);
       return null;
     });
-    readByPath(filepath, jsonpath);
+    readJsonValue(filepath, jsonpath);
   });
 });

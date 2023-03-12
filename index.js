@@ -11,7 +11,7 @@ const isRunningDirectlyViaCLI = nodePath === modulePath;
  * @param {string} jsonpath Path to value in JSON file (e.g. "foo.bar.baz")
  * @returns
  */
-const readByPath = (filepath, jsonpath) => {
+const readJsonValue = (filepath, jsonpath) => {
   const existsFile = fs.existsSync(filepath);
 
   if (!existsFile) {
@@ -43,10 +43,10 @@ if (isRunningDirectlyViaCLI) {
 
   // get arguments passed on command line
   const [filepath, jsonpath] = process.argv.slice(2);
-  const value = readByPath(filepath, jsonpath);
+  const value = readJsonValue(filepath, jsonpath);
 
   // print value
   console.log(value);
 }
 
-module.exports = readByPath;
+module.exports = readJsonValue;
