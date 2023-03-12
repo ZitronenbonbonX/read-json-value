@@ -4,13 +4,16 @@
   "bin": {
     "read-json-value": "index.js"
   },
-  "description": "",
-  "type": "module",
+  "description": "Read a value from a JSON file",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }
