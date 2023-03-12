@@ -1,9 +1,8 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+const fs = require('fs');
+const path = require('path');
 
 const nodePath = path.resolve(process.argv[1]);
-const modulePath = path.resolve(fileURLToPath(import.meta.url));
+const modulePath = path.resolve(__filename);
 const isRunningDirectlyViaCLI = nodePath === modulePath;
 
 /**
@@ -50,4 +49,4 @@ if (isRunningDirectlyViaCLI) {
   console.log(value);
 }
 
-export default readByPath;
+module.exports = readByPath;
