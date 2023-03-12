@@ -44,7 +44,10 @@ if (isRunningDirectlyViaCLI) {
 
   // get arguments passed on command line
   const [filepath, jsonpath] = process.argv.slice(2);
-  readByPath(filepath, jsonpath);
+  const value = readByPath(filepath, jsonpath);
+
+  // print value
+  console.log(value);
 }
 
 export default readByPath;
