@@ -2,16 +2,21 @@
   "name": "read-json-value",
   "version": "1.0.0",
   "bin": {
-    "read-json-value": "index.js"
+    "read-json-value": "./cli.js"
   },
   "description": "Read a value from a JSON file",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cli",
+    "json",
+    "parse",
+    "read",
+    "value"
+  ],
+  "author": "zitronenbonbon_x",
   "license": "MIT",
   "devDependencies": {
     "jest": "^29.5.0"
