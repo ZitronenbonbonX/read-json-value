@@ -1,3 +1,5 @@
+[![Node.js Package](https://github.com/ZitronenbonbonX/read-json-value/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/ZitronenbonbonX/read-json-value/actions/workflows/npm-publish.yml)
+
 # READ JSON VALUE
 
 This is a simple Node.js module to read a JSON value from a file. I created this module because I needed to read a JSON value from a file from the CLI. I couldn't find a module that did this, so I created one.
