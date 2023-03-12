@@ -1,3 +1,5 @@
+[![NPM](https://nodei.co/npm/read-json-value.png)](https://nodei.co/npm/read-json-value/)
+
 # READ JSON VALUE
 
 This is a simple Node.js module to read a JSON value from a file. I created this module because I needed to read a JSON value from a file from the CLI. I couldn't find a module that did this, so I created one.
